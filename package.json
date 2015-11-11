@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm install",
-    "postinstall": "jspm bundle index index_bundle.js",
-    "start": "grunt && mocha"
+    "test": "mocha",
+    "postinstall": "jspm install && jspm bundle index index_bundle.js && grunt"
   },
   "keywords": [],
   "author": "Oleksii_Novakov",
